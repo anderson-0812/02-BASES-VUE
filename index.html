@@ -15,14 +15,15 @@
     
     <!-- vue tendra control absoluto de este div  -->
     <div id="myApp">
-        <h3> {{ message }} </h3>
-        <!-- // renderezar variables  de la function data()-->
-        <blockquote> -{{ author }}</blockquote>
 
+        <h1>Batman Quotes</h1>
 
-        <button v-on:click="changeQuote">
-            Cambiar quote
-        </button>
+        <ul>
+            <li v-for="( {quote, author}, index) in quotes"> 
+                <span>{{ index + 1}} {{ quote }}</span>
+                <blockquote>{{ author }}</blockquote>
+            </li>
+        </ul>        
     </div>
     <script src="app.js"></script>
     
