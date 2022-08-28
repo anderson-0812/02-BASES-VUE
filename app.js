@@ -1,9 +1,15 @@
 console.log( Vue );
 
 const app = Vue.createApp({
-    // template: `
-        
-    // `
+    
+    // este metodo genera rendering en el uso de option api en vue 
+    // message o mas opciones podran ser usadas como variables desde el html
+    data() {
+        return {
+            message: 'Soy Batman',
+            author: 'Burce way'
+        }
+    }
 })
 
 
