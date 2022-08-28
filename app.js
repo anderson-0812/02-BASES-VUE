@@ -18,9 +18,25 @@ const app = Vue.createApp({
     // message o mas opciones podran ser usadas como variables desde el html
     data() {
         return {
-            quotes
+            quotes,
+            newQuote: 'Hola mundo'
         }
     },
+    methods:{
+        addQuote() {
+            console.log(this.newQuote);
+            this.quotes.unshift(
+                {
+                    quote: this.newQuote,
+                    // author: this.newAuthor
+                    author: 'Anderson'
+                }
+            );
+
+            console.log(quotes);
+           
+        }
+    }
 
 })
 
