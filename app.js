@@ -1,10 +1,9 @@
 console.log( Vue );
 
 const app = Vue.createApp({
-    template: `
-        <h1>Hola mundo Vue</h1>
-        <p>Desde app.js</p>
-    `
+    // template: `
+        
+    // `
 })
 
 
