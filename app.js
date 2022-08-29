@@ -29,7 +29,7 @@ const app = Vue.createApp({
                 {
                     quote: this.newQuote,
                     // author: this.newAuthor
-                    author: 'Anderson'
+                    // author: 'Anderson'
                 }
             );
 
